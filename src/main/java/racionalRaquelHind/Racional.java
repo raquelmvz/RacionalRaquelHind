@@ -24,6 +24,15 @@ public class Racional {
         this.b = 1;
     }
     
-    
+    //Constructor con parametros
+    public Racional(int a , int b){
+        this.a=a;
+        if (b==0){
+            this.b=1;
+        }
+        else{
+            this.b=b;
+        }
+    }
     
 }
