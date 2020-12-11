@@ -42,4 +42,31 @@ public class Racional {
         return b;
     }
 
+    //Metodos set
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    public void setB(int b) {
+        
+        if (b == 0) {
+            this.b = 1;
+        } else {
+            this.b = b;
+        }
+        
+    }
+    
+    //Metodo imprimir consola
+    public void imprimirConsola() {
+        System.out.println("El racional es: " + a + "/" + b);
+    }
+    
+    
+    
+    
+    
+    
+    
+
 }
