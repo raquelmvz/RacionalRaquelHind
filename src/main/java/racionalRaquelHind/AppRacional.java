@@ -35,6 +35,11 @@ public class AppRacional {
         System.out.println("Sumamos z y k: ");
         (z.suma(k)).imprimirConsola();
         
+        
+        //Division de z y k, guardando el resultado en un nuevo objeto
+        Racional resultadoDiv = Racional.division(z, k);
+        resultadoDiv.imprimirConsola();
+        
     }
         
         
