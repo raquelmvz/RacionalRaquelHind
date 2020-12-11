@@ -21,5 +21,7 @@ public class AppRacional {
         
         
     }
+        //Crea racional aleatorio
+        Racional aleatorio = Racional.aleatorio();
     
 }
