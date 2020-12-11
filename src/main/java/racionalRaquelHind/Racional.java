@@ -67,6 +67,7 @@ public class Racional {
     public String toString() {
         return a + "/" + b;
     }
+
     //Metodo suma 
     public Racional suma(Racional racional) {
         if (this.b == racional.getB()) {
@@ -77,7 +78,7 @@ public class Racional {
         }
         return new Racional(this.a, this.b);
     }
-    
+
     //Metodo resta
     public Racional resta(Racional racional) {
         if (this.b == racional.getB()) {
@@ -87,17 +88,22 @@ public class Racional {
             this.b *= racional.getB();
         }
         return new Racional(this.a, this.b);
-        
+
     }
-     //Metodo producto
-    public Racional producto(Racional racional){
-        
+    //Metodo producto
+
+    public Racional producto(Racional racional) {
+
         return new Racional(this.a * racional.getA(), this.b * racional.getB());
     }
-    
+
     //Metodo de clase division
     public static Racional division(Racional racional1, Racional racional2) {
-        
+
         return new Racional(racional1.getA() * racional2.getB(), racional1.getB() * racional2.getA());
+    }
+    //Metodo de clase igualidad
+    public static boolean igualdad(Racional racional1, Racional racional2){
+        return racional1.getA()*racional1.getB()==racional2.getA() * racional1.getB();
     }
 }
