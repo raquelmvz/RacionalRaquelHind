@@ -5,6 +5,8 @@
  */
 package racionalRaquelHind;
 
+import java.util.Random;
+
 /**
  *
  * @author raquel
@@ -102,8 +104,27 @@ public class Racional {
 
         return new Racional(racional1.getA() * racional2.getB(), racional1.getB() * racional2.getA());
     }
+
     //Metodo de clase igualidad
-    public static boolean igualdad(Racional racional1, Racional racional2){
-        return racional1.getA()*racional1.getB()==racional2.getA() * racional1.getB();
+    public static boolean igualdad(Racional racional1, Racional racional2) {
+        return racional1.getA() * racional1.getB() == racional2.getA() * racional1.getB();
     }
+
+    //Metodo de clase aleatorio
+    public static Racional aleatorio() {
+
+        Random random = new Random();
+
+        Racional racionalAleatorio = new Racional();
+
+        racionalAleatorio.setA(random.nextInt());
+
+        do {
+            racionalAleatorio.setB(random.nextInt());
+        } while (racionalAleatorio.getB() == 0);
+
+        return racionalAleatorio;
+
+    }
+
 }
