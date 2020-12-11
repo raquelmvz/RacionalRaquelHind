@@ -23,5 +23,9 @@ public class AppRacional {
     }
         //Crea racional aleatorio
         Racional aleatorio = Racional.aleatorio();
+        
+        // Imprime los tres racionales
+        System.out.printf("z = %.2f \n", (double)z.getA() / z.getB());
+        
     
 }
