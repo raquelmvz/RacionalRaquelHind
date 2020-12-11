@@ -77,5 +77,17 @@ public class Racional {
         }
         return new Racional(this.a, this.b);
     }
+    
+    //Metodo resta
+    public Racional resta(Racional racional) {
+        if (this.b == racional.getB()) {
+            this.a -= racional.getA();
+        } else {
+            this.a = (this.a * racional.getB()) - (this.b * racional.getA());
+            this.b *= racional.getB();
+        }
+        return new Racional(this.a, this.b);
+        
+    }
 
 }
