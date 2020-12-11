@@ -11,4 +11,19 @@ package racionalRaquelHind;
  */
 public class Racional {
     
+    //Numerador
+    private int a;
+    //Denominador
+    private int b;
+    
+    //Constructor por defecto
+
+    public Racional() {
+        
+        this.a = 1;
+        this.b = 1;
+    }
+    
+    
+    
 }
