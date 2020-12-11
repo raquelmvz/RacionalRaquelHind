@@ -32,7 +32,7 @@ public class Racional {
             this.b = b;
         }
     }
-     //getters
+    //getters
 
     public int getA() {
         return a;
@@ -48,25 +48,24 @@ public class Racional {
     }
 
     public void setB(int b) {
-        
+
         if (b == 0) {
             this.b = 1;
         } else {
             this.b = b;
         }
-        
+
     }
-    
+
     //Metodo imprimir consola
     public void imprimirConsola() {
         System.out.println("El racional es: " + a + "/" + b);
     }
-    
-    
-    
-    
-    
-    
-    
+
+    //Metodo ToString
+    @Override
+    public String toString() {
+        return a + "/" + b;
+    }
 
 }
