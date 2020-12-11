@@ -67,5 +67,15 @@ public class Racional {
     public String toString() {
         return a + "/" + b;
     }
+    //Metodo suma 
+    public Racional suma(Racional racional) {
+        if (this.b == racional.getB()) {
+            this.a += racional.getA();
+        } else {
+            this.a = (this.a * racional.getB()) + (this.b * racional.getA());
+            this.b *= racional.getB();
+        }
+        return new Racional(this.a, this.b);
+    }
 
 }
