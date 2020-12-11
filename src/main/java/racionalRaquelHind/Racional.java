@@ -89,5 +89,9 @@ public class Racional {
         return new Racional(this.a, this.b);
         
     }
-
+     //Metodo producto
+    public Racional producto(Racional racional){
+        
+        return new Racional(this.a * racional.getA(), this.b * racional.getB());
+    }
 }
