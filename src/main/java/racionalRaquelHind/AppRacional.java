@@ -25,7 +25,13 @@ public class AppRacional {
         // Imprime los tres racionales
         System.out.printf("z = %.2f \n", (double)z.getA() / z.getB());
         System.out.printf("k = %.2f \n", (double)k.getA() / z.getB());
-        System.out.printf("%.2f" , aleatorio.getA()/aleatorio.getB());
+        System.out.printf("%.2f" , (double)aleatorio.getA()/aleatorio.getB());
+        
+        
+        //Comparacion de z y k
+        System.out.println("¿z y k son iguales?: " + Racional.igualdad(z, k));
+        
+        
         
     }
         
