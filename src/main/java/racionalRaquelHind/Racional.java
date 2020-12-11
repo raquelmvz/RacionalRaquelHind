@@ -94,4 +94,10 @@ public class Racional {
         
         return new Racional(this.a * racional.getA(), this.b * racional.getB());
     }
+    
+    //Metodo de clase division
+    public static Racional division(Racional racional1, Racional racional2) {
+        
+        return new Racional(racional1.getA() * racional2.getB(), racional1.getB() * racional2.getA());
+    }
 }
