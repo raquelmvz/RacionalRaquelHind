@@ -19,13 +19,15 @@ public class AppRacional {
         
         Racional k = new Racional(3,4);
         
-        
-    }
         //Crea racional aleatorio
         Racional aleatorio = Racional.aleatorio();
         
         // Imprime los tres racionales
         System.out.printf("z = %.2f \n", (double)z.getA() / z.getB());
+        
+        
+    }
+        
         
     
 }
