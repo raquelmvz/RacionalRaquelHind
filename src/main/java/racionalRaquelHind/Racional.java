@@ -10,29 +10,36 @@ package racionalRaquelHind;
  * @author raquel
  */
 public class Racional {
-    
+
     //Numerador
     private int a;
     //Denominador
     private int b;
-    
-    //Constructor por defecto
 
+    //Constructor por defecto
     public Racional() {
-        
+
         this.a = 1;
         this.b = 1;
     }
-    
+
     //Constructor con parametros
-    public Racional(int a , int b){
-        this.a=a;
-        if (b==0){
-            this.b=1;
-        }
-        else{
-            this.b=b;
+    public Racional(int a, int b) {
+        this.a = a;
+        if (b == 0) {
+            this.b = 1;
+        } else {
+            this.b = b;
         }
     }
-    
+     //getters
+
+    public int getA() {
+        return a;
+    }
+
+    public int getB() {
+        return b;
+    }
+
 }
