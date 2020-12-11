@@ -31,7 +31,9 @@ public class AppRacional {
         //Comparacion de z y k
         System.out.println("¿z y k son iguales?: " + Racional.igualdad(z, k));
         
-        
+        //Suma z y k y Muestra el resultado.
+        System.out.println("Sumamos z y k: ");
+        (z.suma(k)).imprimirConsola();
         
     }
         
