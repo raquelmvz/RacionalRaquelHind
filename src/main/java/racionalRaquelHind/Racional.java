@@ -70,15 +70,16 @@ public class Racional {
         return a + "/" + b;
     }
 
-    //Metodo suma 
-    public Racional suma(Racional racional) {
-        if (this.b == racional.getB()) {
-            this.a += racional.getA();
+    //Metodo de clase suma
+    public static Racional suma(Racional racional1, Racional racional2) {
+
+        if (racional1.getB() != racional2.getB()) {
+            return new Racional(racional1.getA() * racional2.getB() + racional1.getB() * racional2.getA(), racional1.getB() * racional2.getB());
+
         } else {
-            this.a = (this.a * racional.getB()) + (this.b * racional.getA());
-            this.b *= racional.getB();
+            return new Racional(racional1.getA() + racional2.getA(), racional1.getB());
         }
-        return new Racional(this.a, this.b);
+
     }
 
     //Metodo resta
