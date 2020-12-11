@@ -25,7 +25,7 @@ public class AppRacional {
         // Imprime los tres racionales
         System.out.printf("z = %.2f \n", (double)z.getA() / z.getB());
         System.out.printf("k = %.2f \n", (double)k.getA() / z.getB());
-        System.out.printf("%.2f" , (double)aleatorio.getA()/aleatorio.getB());
+        System.out.printf("aleatorio = %.2f \n" , (double)aleatorio.getA()/aleatorio.getB());
         
         
         //Comparacion de z y k
@@ -37,6 +37,7 @@ public class AppRacional {
         
         
         //Division de z y k, guardando el resultado en un nuevo objeto
+        System.out.println("Dividimos z y k: ");
         Racional resultadoDiv = Racional.division(z, k);
         resultadoDiv.imprimirConsola();
         
